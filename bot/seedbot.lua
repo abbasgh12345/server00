@@ -204,6 +204,20 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
+    "plugin",
+    "well",
+    "web",
+    "txt",
+    "robo",
+    "map",
+    "id",
+    "gps",
+    "img",
+    "google",
+    "echo",
+    "dic",
+    "calc",
+    "autoleave",
     "onservice",
     "inrealm",
     "ingroup",
@@ -221,7 +235,7 @@ function create_config( )
     "all",
     "leave_ban"
     },
-    sudo_users = {110626080,103649648,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {179983320},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[Teleseed v2 - Open Source
@@ -229,21 +243,11 @@ An advance Administration bot based on yagop/telegram-bot
 
 https://github.com/SEEDTEAM/TeleSeed
 
-Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@Rondoozle [Developer]
-@seyedan25 [Manager]
-
-Special thanks to
-awkward_potato
-Siyanew
-topkecleon
-Vamptacus
+sudo
+@unkownhacker
 
 Our channels
-@teleseedch [English]
-@iranseed [persian]
+@extremerobos
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -358,15 +362,16 @@ Set group name
 !rules
 Group rules
 
+!ids gp
 !id
 return group id or user id
 
 !help
 
-!lock [member|name|bots|leave]	
+!lock [member|name|bots|leave|arabic]	
 Locks [member|name|bots|leaveing] 
 
-!unlock [member|name|bots|leave]
+!unlock [member|name|bots|leave|arabic]
 Unlocks [member|name|bots|leaving]
 
 !set rules <text>
@@ -410,20 +415,28 @@ returns user id
 "!res @username"
 
 !log
-will return group logs
+list member
 
 !banlist
-will return group ban list
 
-**U can use both "/" and "!" 
+!src ***
 
+!img ***
 
-*Only owner and mods can add bots in group
+!calc 2*2
 
+!web ***
 
-*Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
+!echo ***
 
-*Only owner can use res,setowner,promote,demote and log commands
+!dic ***
+
+!gps ***
+
+!map ***
+
+!bot off
+!bot on
 
 ]]
   }
